@@ -1,0 +1,91 @@
+nav {
+    background-color: #004b8d;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: #003366;
+    border-radius: 5px;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+    background-color: #004b8d;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    min-width: 200px;
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+.submenu ul li {
+    width: 100%;
+}
+
+.submenu ul li a {
+    display: block;
+    padding: 10px;
+}
+
+.carousel img {
+    object-fit: cover;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.accordion-button {
+    background-color: #004b8d;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #003366;
+    color: white;
+}
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1000;
+background-color: #25d366;
+border-radius: 50%;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+transform: scale(1.1);
+}
