@@ -227,7 +227,27 @@
     </div>
     
     <!-- Script para manejar el envío del formulario -->
-    
+<form id="formDonacion">
+                <div class="mb-3">
+                    <label for="valorDonacion" class="form-label">Valor a Donar ($)</label>
+                    <input type="number" class="form-control" id="valorDonacion" placeholder="Ej. 50000" min="1" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="meses" class="form-label">Cantidad de Meses</label>
+                    <select class="form-select" id="meses" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="1">1 mes</option>
+                    <option value="3">3 meses</option>
+                    <option value="6">6 meses</option>
+                    <option value="12">12 meses</option>
+                    </select>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success rounded-3">Donar</button>
+                </div>
+                </form>    
 
     <!-- Footer pagina o border-->
 <footer class="bg-dark text-white text-center py-3 mt-4">
@@ -245,12 +265,13 @@
 
     <!-- Link de whatsApp  -->
 </footer>
-<a href="https://wa.me/573042130469" 
+<a href="https://wa.me/573042130469"
 class="whatsapp-float" 
 target="_blank" 
 title="Contáctanos por WhatsApp">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50" height="50">
-</a>
+</a> <title>Formulario de Donación</title>
+
 
 </body>
 </html>
