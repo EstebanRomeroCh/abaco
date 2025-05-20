@@ -89,3 +89,60 @@ transition: transform 0.3s ease;
 .whatsapp-float:hover {
 transform: scale(1.1);
 }
+.metodo {
+    width: 1300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.metodo h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.metodo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.metodo input[type="number"] {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.metodo button {
+    width: 100%;
+    padding: 8px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.metodo button:hover {
+    background-color: #357ae8;
+}
+
+.metodo h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: normal;
+    color: #333;
+}
+
+.metodo span#resultado {
+    font-weight: bold;
+}

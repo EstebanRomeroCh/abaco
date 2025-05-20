@@ -11,13 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
     contactForm.reset();
     });
 });
-
-    document.getElementById('formDonacion').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const valor = parseFloat(document.getElementById('valorDonacion').value);
-      const meses = parseInt(document.getElementById('meses').value);
-      const total = valor * meses;
-
-      document.getElementById('resultado').textContent =
-        `Donación mensual de $${valor.toLocaleString()} durante ${meses} mes(es) = Total: $${total.toLocaleString()}`;
-    });
+    function multiplicar() {
+      const numero1 = parseFloat(document.getElementById('num1').value) || 0;
+      const numero2 = parseFloat(document.getElementById('num2').value) || 0;
+      const resultado = numero1 * numero2;
+      document.getElementById('resultado').textContent = resultado;
+    }
